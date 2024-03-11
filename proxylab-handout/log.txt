@@ -1,0 +1,18 @@
+start 10 thread
+Accepted connection from (localhost, 50282)
+thread 140338378172160 take fd 4
+GET http://localhost:1126/nop-file.txt HTTP/1.1
+rec header Host: localhost:1126
+rec header User-Agent: curl/7.68.0
+rec header Accept: */*
+rec header Proxy-Connection: Keep-Alive
+rec header 
+after
+ GET /nop-file.txt HTTP/1.0
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0.3) Gecko/20120305 Firefox/10.0.3
+Connection: close
+Proxy-Connection: close
+Host: localhost
+
+Accepted connection from (localhost, 50288)
