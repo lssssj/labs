@@ -1,0 +1,22 @@
+root
+[8字节] []
+root指针占用8个字节，然后存储的是第一个free block的地址
+free block的内容是
+8字节size,8字节next,8字节prev
+  - 如果只有一个free block 那么它的next是null, prev是head_end； 特殊情况
+allocated block的内容是
+8字节size,剩下的都是内容
+
+1. 如何申请malloc
+2. 找到一个block的大小符合要求，然后split_block
+
+line37 a 31 26309
+a 32 30814
+a 33 7526
+f 33
+line41 a 34 16643
+
+amptjp-bal.rep
+cp-decl-bal.rep find_next_free
+expr-bal.rep find_prev_free
+test1.rep find_prev_free

@@ -1,0 +1,73 @@
+// launch.json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "mytest3",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/root/compiler/csapp/malloclab-handout/mytest3",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      //"preLaunchTask": "C/C++: g++.exe build active file"
+    },
+
+    {
+      "name": "mytest2",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/root/compiler/csapp/malloclab-handout/mytest2",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      //"preLaunchTask": "C/C++: g++.exe build active file"
+    },
+    {
+      "name": "mdriver",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/root/compiler/csapp/malloclab-handout/mdriver",
+      "args": ["-f", "traces/random2-bal.rep", "-V"],
+      "stopAtEntry": true,
+      "cwd": "/root/compiler/csapp/malloclab-handout",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      //"preLaunchTask": "C/C++: g++.exe build active file"
+    }
+  ]
+}
